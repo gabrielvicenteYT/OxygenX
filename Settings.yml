@@ -16,13 +16,13 @@ OxygenX:
 
   # Amount of checks for a account many times to check a account. will be slower if retries is set higher
   # Needs to be 1 or higher (Recommanded: 1-2 for paid proxies, 3-6 for public proxies.)
-  retries: 3
+  retries: 4
 
   # Higher for better accuracy but slower (counted in milliseconds, example: 6000ms = 6 seconds)
-  timeout: 6000
+  timeout: 2000
 
   # Threads for account checking
-  threads: 200
+  threads: 1000
   
   # Remove all duplicates in combolist
   combo_duplicates: true
@@ -86,12 +86,12 @@ OxygenX:
     # If proxies be used for checking sfas (Will be slower but if false, you may get ip banned)
     proxy_for_sfa: false
     # Sleep between checks if proxy mode is false (put 0 for no sleep) counted in secouds
-    sleep_proxyless: 30
+    sleep_proxyless: 0
     
     api:
       # If proxy api link to be used.
-      use: false
+      use: true
       # If proxy_use_api is true, put api link in the parentheses
       api_link: "https://api.proxyscrape.com/?request=getproxies&proxytype=socks4&timeout=3000"
       # If proxy_use_api is true, put a number for seconds to refresh the link (every number under 30 is for no refreshing time, recommend refresh time: 300 seconds aka 5 minutes)
-      refresh_time: 300
+      refresh_time: 150
