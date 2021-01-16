@@ -50,7 +50,7 @@ OxygenX:
     # Check capes
     liquidbounce: true
     optifine: true
-    labymod:  true
+    labymod:  false
     mojang:  true
 
   rank:
